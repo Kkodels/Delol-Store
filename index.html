@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Delol Store - Toko online eksklusif untuk produk digital premium seperti akun game, akun pro, dan token listrik.">
+  <title>Delol Store 🍀</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="logo/logo.png" type="image/x-icon">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="logo/logo.png" alt="Logo Delol Store">
+      <h1>Delol Store</h1>
+    </div>
+    <nav class="navbar">
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="nav-links" id="nav-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#produk">Produk</a>
+        <a href="#tentang-kami">Tentang Kami</a>
+        <a href="https://www.itemku.com/t/delol-store?from=productdetail" target="_blank" class="btn-store">Kunjungi Toko</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Beranda Section -->
+  <section id="beranda" class="beranda">
+    <div class="beranda-container">
+      <div class="beranda-text">
+        <h2>Delol Store</h2>
+        <p>Toko online eksklusif untuk produk digital premium</p>
+        <a href="#produk" class="btn-beranda">Jelajahi Koleksi</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section id="produk" class="products">
+    <h2>Koleksi Eksklusif Kami</h2>
+    <div class="categories">
+      <button class="category-btn active" data-category="semua">Semua</button>
+      <button class="category-btn" data-category="game">Akun Game</button>
+      <button class="category-btn" data-category="fitur">Akun Fitur Pro</button>
+      <button class="category-btn" data-category="token">Token Listrik</button>
+    </div>
+    <div class="product-grid">
+      <!-- Produk Game -->
+      <div class="product-card game">
+        <img src="produk/Akun Mobile Legend -Level 8 -Siap Rank -BP 25000.jpg" alt="Akun Mobile Legend Level 8" loading="lazy">
+        <h3>Akun ML Siap Rank Lvl 8</h3>
+        <div class="price-container">
+          <span class="price-discount">Rp 10.000</span>
+          <span class="price-new">Rp 7.400</span>
+        </div>
+        <a href="https://www.itemku.com/dagangan/mobile-legends-akun-mobile-legend-siap-rank-lvl-8-delol-store/3427680?from=othersellerproduct_pd" class="chat-sales-btn" target="_blank">Beli Sekarang</a>
+      </div>
+      <!-- Produk Fitur Pro -->
+      <div class="product-card fitur">
+        <img src="produk/fb_cover.webp" alt="Canva Pro Subscription" loading="lazy">
+        <h3>Canva Pro 1 Bulan</h3>
+        <div class="price-container">
+          <span class="price-discount">Rp 5.000</span>
+          <span class="price-new">Rp 3.000</span>
+        </div>
+        <a href="https://www.itemku.com/dagangan/canva-canva-pro-via-invite-1-bulan-delol-store/3427757?from=search_page" class="chat-sales-btn" target="_blank">Beli Sekarang</a>
+      </div>
+      <div class="product-card fitur">
+        <h3>Netflix</h3>
+        <p>Segera Hadir</p>
+      </div>
+    </div>
+      <!-- Produk Token Listrik -->
+      <div class="product-card token">
+        <h3>token Listrik</h3>
+        <p>Segera Hadir</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call-to-Action Banner -->
+  <section id="cta" class="cta">
+    <div class="cta-container">
+      <h2>Jadi Bagian dari Ribuan Pelanggan Bahagia!</h2>
+      <p>Temukan solusi digital terpercaya dan hemat hanya di Delol Store.</p>
+      <a href="https://www.itemku.com/t/delol-store?from=productdetail" target="_blank" class="btn-cta">Kunjungi Toko Kami</a>
+    </div>
+  </section>
+
+  <!-- Tentang Kami Section -->
+  <section id="tentang-kami" class="tentang-kami">
+    <div class="tentang-kami-container">
+      <h2>Tentang Kami</h2>
+      <p>Delol Store adalah destinasi eksklusif untuk produk digital seperti akun game premium, langganan pro, dan token listrik. Dengan semangat semanggi berdaun empat, kami menghadirkan keberuntungan dan kualitas terbaik untuk Anda.</p>
+      <p>Visi kami adalah menjadi toko digital terdepan, menawarkan layanan cepat, aman, dan harga yang kompetitif.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="logo/logo.png" alt="Logo Delol Store">
+        <h3>Delol Store</h3>
+      </div>
+      <div class="footer-links">
+        <a href="#beranda">Beranda</a>
+        <a href="#produk">Produk</a>
+        <a href="#tentang-kami">Tentang Kami</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/delol.store" target="_blank">Instagram</a>
+        <a href="https://www.itemku.com/t/delol-store?from=productdetail" target="_blank">Itemku</a>
+      </div>
+    </div>
+    <p>© 2025 Delol Store. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript for Category Filtering and Menu Toggle -->
+  <script>
+    // Category Filtering
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const productCards = document.querySelectorAll('.product-card');
+
+    function showCategory(category) {
+      console.log('showCategory called with category:', category);
+      productCards.forEach(card => {
+        const shouldShow = category === 'semua' || card.classList.contains(category);
+        card.style.display = shouldShow ? 'flex' : 'none';
+        console.log(`Card with classes ${Array.from(card.classList).join(', ')} set to display: ${card.style.display}`);
+      });
+    }
+
+    categoryButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        categoryButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        showCategory(button.getAttribute('data-category'));
+      });
+    });
+
+    // Initialize with 'semua' category
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('DOMContentLoaded called');
+      showCategory('semua');
+    });
+
+    // Menu Toggle for Mobile
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+
+    if (menuToggle && navLinks) {
+      console.log('Menu toggle and nav links found');
+      menuToggle.addEventListener('click', () => {
+        console.log('Menu toggle clicked');
+        navLinks.classList.toggle('active');
+        menuToggle.classList.toggle('active');
+      });
+    } else {
+      console.log('Error: Menu toggle or nav links not found');
+    }
+  </script>
+</body>
+</html>
